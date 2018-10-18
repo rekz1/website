@@ -1,0 +1,12 @@
+version: '3'
+services:
+  hugo:
+    image: jojomi/hugo:latest
+    container_name: hugo
+    volumes:
+      - $PWD:/src
+      - $PWD/output:/output
+    environment:
+      - HUGO_THEME=coder
+      - HUGO_WATCH=1
+      - HUGO_BASEURL=http://christian-niehoff.com/
