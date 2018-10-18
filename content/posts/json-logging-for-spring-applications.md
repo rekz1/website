@@ -69,5 +69,6 @@ If you want to log in file, you could configure a `RollingFileAppender`.
 </configuration>
 ```
 
-Till next time,
+Till next time!
+
 Chris

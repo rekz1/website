@@ -34,5 +34,6 @@ Mo 16. Jul 18:00:00 CEST 2018
 - wrote a blog post about my did file
 ```
 
-Till next time,
+Till next time!
+
 Chris
