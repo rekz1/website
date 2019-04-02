@@ -1,59 +1,79 @@
-baseurl = "http://christian-niehoff.com" # Hostname (and path) to the root.
-title = "Christian Niehoff" # Site title.
-theme = "coder" # Set the theme.
-languagecode = "en-us" # The site’s language code.
+baseURL = "/"
+title   = "Christian Niehoff"
+languageCode = "en-us"
+theme = "hello-friend-ng"
 
-paginate = 20 # Default number of pages per page in pagination.
-canonifyurls = true # Enable to turn relative URLs into absolute.
+DefaultContentLanguage = "de"
 
-pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
-pygmentscodefences = true # Enable code fence background highlighting.
-pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
 
-pluralizelisttitles = false
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
 
-defaultContentLanguage = "en"
+enableRobotsTXT = true
+enableGitInfo   = true
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = true
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
 
-[params] # theme parameters
-    author = "Christian Niehoff" # Author's name.
-    description = "Christian Niehoff's personal website" # Site description.
-    keywords = "blog,developer,personal" # Site keywords.
+[author]
+  name = "Christian Niehoff"
 
-    # Whether you want to hide copyright and credits in the footer.
-    hideCredits = false
-    hideCopyright = false
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
-    # Custom CSS
-	custom_css = []
+  # Metadata mostly used in document's head
+  description = "Homepage by Christian Niehoff"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
 
-# Menu links
-[[menu.main]]
-    name = "Blog"
-    weight = 30
-    url  = "/posts/"
+  customCSS = ["custom.css"]
 
-[[menu.main]]
-    name = "About"
-    weight = 99
-    url  = "/about"
+  homeSubtitle = "System Engineer"
 
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github"
-    weight = 1
-    url = "https://github.com/rekz1"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 2
-    url = "https://twitter.com/_rekzi"
-[[params.social]]
-    name = "Keybase"
-    icon = "fab fa-keybase"
-    weight = 2
-    url = "https://keybase.io/cniehoff"
+  contentTypeName = "content"
 
-[outputFormats]
-    [outputFormats.RSS]
-    mediatype = "application/rss"
-    baseName = "feed"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+  # Prefix of link to the git commit detail page. GitInfo must be enabled.
+  gitUrl = "https://github.com/rekz1/website/commit/"
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  justifyContent = false  # Set "text-align: justify" to .content.
+
+  [params.logo]
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+
+  [[params.social]]
+      name = "github"
+      url = "https://github.com/rekz1"
+  [[params.social]]
+      name = "twitter"
+      url = "https://twitter.com/_rekzi_"
+  [[params.social]]
+	  name = "linkedin"
+	  url = "https://www.linkedin.com/in/christian-niehoff-637b9b17a/"
+
+[menu]
+  [[menu.main]]
+    identifier = "about me"
+    name       = "about me"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "gpgkey"
+    name       = "gpgkey"
+    url        = "/gpgkey"
