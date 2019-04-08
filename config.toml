@@ -67,6 +67,9 @@ disableHugoGeneratorInject = false
   [[params.social]]
 	  name = "linkedin"
 	  url = "https://www.linkedin.com/in/christian-niehoff-637b9b17a/"
+  [[params.social]]
+  	  name = "dockerhub"
+  	  url = "https://hub.docker.com/?namespace=rekzi"
 
 [menu]
   [[menu.main]]
