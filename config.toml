@@ -41,7 +41,7 @@ disableHugoGeneratorInject = false
 
   customCSS = ["custom.css"]
 
-  homeSubtitle = "System Engineer"
+  homeSubtitle = "Infrastructure Engineer"
 
   contentTypeName = "content"
 
