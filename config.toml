@@ -37,7 +37,7 @@ disableHugoGeneratorInject = false
   # Metadata mostly used in document's head
   description = "Homepage by Christian Niehoff"
   keywords = "homepage, blog, science, informatics, development, programming"
-  images = [""]
+  images = ["images/avatar.jpeg"]
 
   customCSS = ["custom.css"]
 
@@ -46,10 +46,10 @@ disableHugoGeneratorInject = false
   contentTypeName = "content"
 
   # Default theme "light" or "dark"
-  defaultTheme = "dark"
+  defaultTheme = "light"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
-  gitUrl = "https://github.com/rekz1/website/commit/"
+  gitUrl = "https://github.com/r3kzi/website/commit/"
 
   # Toggle this option need to rebuild SCSS, requires extended version of Hugo
   justifyContent = false  # Set "text-align: justify" to .content.
@@ -60,7 +60,7 @@ disableHugoGeneratorInject = false
 
   [[params.social]]
       name = "github"
-      url = "https://github.com/rekz1"
+      url = "https://github.com/r3kzi"
   [[params.social]]
       name = "twitter"
       url = "https://twitter.com/_rekzi_"
@@ -74,9 +74,9 @@ disableHugoGeneratorInject = false
 [menu]
   [[menu.main]]
     identifier = "about me"
-    name       = "about me"
+    name       = "~/contact"
     url        = "/about"
   [[menu.main]]
     identifier = "gpgkey"
-    name       = "gpgkey"
+    name       = "~/gpgkey"
     url        = "/gpgkey"
